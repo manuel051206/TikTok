@@ -1,0 +1,230 @@
+body {
+    background-color: #c7c7c7;
+}
+
+h1 {
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: rgb(28, 28, 28);
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centering along the horizontal (main) axis */
+    align-items: center; /* Centering along the vertical (cross) axis */
+    height: 100vh; /* Set the body height to the full viewport height */
+}
+
+.background {
+    width: 500px;
+    height: 550px;
+    background-color: rgb(0, 143, 2);
+    display: flex; /* Add flex display for the .background div */
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+}
+
+.screen {
+    width: 490px;
+    height: 80px;
+    background-color: black;
+    margin-top: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.screen p {
+    font-size: 30px;
+    font-family: 'Press Start 2P';
+    color: rgb(0, 143, 2);
+    margin-right: 5px;
+    
+}
+
+.btnPad {
+    width: 490px;
+    height: 450px;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers {
+    width: 340px;
+    height: 400px;
+    justify-self: left;
+    margin-left: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+}
+
+
+
+.numbers button:nth-child(10) {
+    grid-column: 2; /* Place the 10th button in the center column (second column) */
+}
+
+
+.ctrlbtns {
+    width: 270px;
+    height: 400px;
+    justify-self: right;
+    display: grid;
+    margin-left: 5px;
+    gap: 3px;
+
+}
+
+.delete {
+    width: 210px;
+
+}
+
+.plusandminus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5px;
+
+    
+}
+
+.plus {
+    width: 105px;
+
+}
+
+.minus {
+    width: 105px;
+
+}
+
+.multanddivition {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5px;
+
+}
+
+.mult {
+    width: 105px;
+
+}
+
+.divition {
+    width: 105px;
+
+}
+
+.equal {
+    width: 210px;
+
+}
+
+.openandclosepar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5px;
+}
+
+.openpar {
+    width: 105px;
+}
+
+.closepar {
+    width: 105px;
+}
+
+button {
+    color: white;
+    background-color: rgb(28, 28, 28);
+}
+
+button:hover {
+    color: rgb(219, 219, 219);
+    background-color: black;
+}
+
+
+.numbers button {
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+}
+
+.ctrlbtns button {
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+}
+
+
+ 
+
+@media (max-width: 600px) {
+    .background {
+        width: 100%;
+     
+    }
+
+
+    .screen {
+        width: 100%;
+    }
+
+    .btnPad {
+        width: 100%;
+    }
+    
+    .numbers {
+        width: 100%;
+    }
+
+    .delete {
+        width: 99%;
+    
+    }
+    
+    .plus {
+        width: 49%;
+    
+    }
+    
+    .minus {
+        width: 49%;
+    
+    }
+    
+    
+    .mult {
+        width: 49%;
+    
+    }
+    
+    .divition {
+        width: 49%;
+    
+    }
+    
+    .equal {
+        width: 99%;
+    
+    }
+    
+    
+    .openpar {
+        width: 49%;
+    }
+    
+    .closepar {
+        width: 49%;
+    }
+
+    h1 {
+        position: absolute;
+        top: 20px;
+    }
+
+
+}
